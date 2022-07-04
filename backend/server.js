@@ -6,7 +6,8 @@ const path = require('path')
 
 //conección con la base de datos
 mongoose
-    .connect('mongodb://127.0.0.1:27017/dinos')
+    //.connect('mongodb://127.0.0.1:27017/dinosDB')
+    .connect('mongodb+srv://mane:1234@dinosdb.jscsl.mongodb.net/dinosdb?retryWrites=true&w=majority')
     .then((x) => {
         console.log(`Conectado exitosamente a Mongo a la base de datos: "${x.connections[0].name}" `)
     })

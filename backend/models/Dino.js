@@ -18,7 +18,7 @@ let Dino = new Schema({
         type: Number
     },
 },{
-    collection: 'dinosDB'
+    collection: 'dinosdb'
 })
 
 module.exports = mongoose.model('Dino', Dino)
