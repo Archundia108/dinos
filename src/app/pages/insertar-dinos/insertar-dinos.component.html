@@ -17,17 +17,20 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="nombre">Tipo: </label>
-                    <input type="text" class="form-control" formControlName="nombre"/>
-
-                    <div style="color: red;" *ngIf="">
+                    <label for="tipo">Tipo: </label>
+                    <select class="custom-select form-control" formControlName="tipo">
+                    <option value="">selecciona el tipo...</option>
+                    <option *ngFor="" value=""></option>
+                    
+                    </select>
+                </div>
+                <div style="color: red;" *ngIf="">
                         este campo es obligatorio
                     </div>
-                </div>
 
                 <div class="form-group">
-                    <label for="departamento">Género: </label>
-                    <select class="custom-select form-control" formControlName="departamento">
+                    <label for="genero">Género: </label>
+                    <select class="custom-select form-control" formControlName="genero">
                     <option value="">selecciona el género...</option>
                     <option *ngFor="" value=""></option>
                     
@@ -38,22 +41,21 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Peso: </label>
-                    <input type="text" class="form-control" formControlName="email"/>
+                    <label for="peso">Peso: </label>
+                    <input type="text" class="form-control" formControlName="peso"/>
                 </div>
                 <div style="color: red;" *ngIf="">
                     este campo es obligatorio
                 </div>
-                <div style="color: red;" *ngIf="">
-                    El email no es valido
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Tamaño: </label>
-                    <input type="text" class="form-control" formControlName="email"/>
-                </div>
-
                 
+                <div class="form-group">
+                    <label for="tamanio">Tamaño: </label>
+                    <input type="text" class="form-control" formControlName="tamanio"/>
+                </div>
+
+                <div style="color: red;" *ngIf="">
+                    este campo es obligatorio
+                </div>
 
                 <div class="form-group">
                     <button class="btn btn-success btn-lg btn-block" type="submit">Agregar</button>
