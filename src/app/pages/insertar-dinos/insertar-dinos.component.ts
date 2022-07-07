@@ -12,8 +12,8 @@ export class InsertarDinosComponent implements OnInit {
 
   //propiedades
   enviado = false;
-  tipo: any = ['Carvinovoro', 'Herbivoro', 'Omnivoro', 'Piscivoro']
-  genero: any = ['Tiranosauridae', 'Spinosauridae', 'Abelisauridae', 'Ceratopsidae', 'Carcharodontosauridae']
+  tiposDinosaurio: any = ['Carvinovoro', 'Herbivoro', 'Omnivoro', 'Piscivoro']
+  generosDinosaurio: any = ['Tiranosauridae', 'Spinosauridae', 'Abelisauridae', 'Ceratopsidae', 'Carcharodontosauridae']
   insertarForm: FormGroup;
 
   constructor(
