@@ -8,7 +8,7 @@ import { map, catchError } from 'rxjs/operators';
 })
 export class DinoService {
 
-baseUri:string='//localhost:4000/api';
+baseUri:string='https://dyno-api-ds02.herokuapp.com/api';
 headers=new HttpHeaders().set('Content-Type','application/json');
 
   
