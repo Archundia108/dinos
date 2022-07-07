@@ -26,12 +26,12 @@
                 <td>{{ dino.peso }}</td>
                 <td>{{ dino.tamanio }}</td>
                 <td>
-                    <span [routerLink]="['/editar-empleado', dino._id]">
+                    <span [routerLink]="['/editar-dino', dino._id]">
                         <button type="button" class="btn btn-warning btn-sm">Editar</button>
                     </span>
                 </td>
                 <td>
-                    <span (click)="eliminarEmpleado(dino, i)">
+                    <span (click)="eliminarDino(dino, i)">
                         <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
                     </span>
                 </td>

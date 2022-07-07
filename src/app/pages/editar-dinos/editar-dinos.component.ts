@@ -16,7 +16,7 @@ export class EditarDinosComponent implements OnInit {
   tipo: any = ['Carvinovoro', 'Herbivoro', 'Omnivoro', 'Piscivoro']
   genero: any = ['Tiranosauridae', 'Spinosauridae', 'Abelisauridae', 'Ceratopsidae', 'Carcharodontosauridae']
   editarForm: FormGroup;
-  empleadoData: Dino[];
+  dinoData: Dino[];
 
   constructor(
     public formBuilder: FormBuilder,

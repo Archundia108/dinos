@@ -23,7 +23,7 @@ export class ListarDinosComponent implements OnInit {
     })
   }
 
-  eliminarEmpleado(dino, index) {
+  eliminarDino(dino, index) {
     if (window.confirm('¿Estás seguro de lo que deseas borrar?')) {
       this.dinoService.deleteDino(dino._id).subscribe((data) => {
         this.Dinos.splice(index, 1);

@@ -7,7 +7,7 @@ import { ListarDinosComponent } from './pages/listar-dinos/listar-dinos.componen
 const routes: Routes = [
   {path:'',pathMatch:'full',redirectTo:'insertar-dinos'},
   {path:'insertar-dinos',component:InsertarDinosComponent},
-  { path: 'editar-dinos/:id', component: EditarDinosComponent },
+  { path: 'editar-dino/:id', component: EditarDinosComponent },
   {path:'listar-dinos',component:ListarDinosComponent}
 ];
 
