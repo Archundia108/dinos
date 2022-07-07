@@ -1,12 +1,13 @@
-<br/>
+
+<img class="d-block mx-auto mb-4" src="/assets/images/jp.png" alt="" width="200px" height="">
 <div class="container">
     <!-- Mensaje por si no hay empleados -->
     <p *ngIf="Dinos.length <= 0" class="text-center">No hay dinos registrados</p>
     <!-- Lista de empleados -->
 
-    <table class="table table-bordered">
+    <table class="table table-bordered table-warning">
         <thead class="table-success">
-            <tr>
+            <tr class="table-danger">
                 <th scope="col">ID Dinosaurio</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Tipo</th>
