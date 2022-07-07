@@ -1,7 +1,8 @@
-<h2 >Editar Dinosaurio</h2>
+<img class="d-block mx-auto mb-4" src="/assets/images/jp.png" alt="" width="200px" height="">
 
 <div class="row justify-content-center">
     <div class="col-md-4">
+        <h2 >Editar Dinosaurio</h2>
         <div class="card-body">
             <form [formGroup]="editarForm" (ngSubmit)="onSubmit()">
                <!--Mensaje de error-->
@@ -55,9 +56,9 @@
                 <div style="color: red;" *ngIf="">
                     este campo es obligatorio
                 </div>
-
+            <br/>
                 <div class="form-group">
-                    <button class="btn btn-success btn-lg btn-block" type="submit">Agregar</button>
+                    <button class="btn btn-success btn-lg btn-block" type="submit">Editar</button>
                 </div>
             </form>
             
