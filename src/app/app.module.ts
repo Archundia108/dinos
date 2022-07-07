@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { InsertarDinosComponent } from './pages/insertar-dinos/insertar-dinos.component';
 import { ListarDinosComponent } from './pages/listar-dinos/listar-dinos.component';
 import { EditarDinosComponent } from './pages/editar-dinos/editar-dinos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { EditarDinosComponent } from './pages/editar-dinos/editar-dinos.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
