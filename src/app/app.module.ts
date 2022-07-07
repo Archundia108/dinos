@@ -8,13 +8,15 @@ import { ListarDinosComponent } from './pages/listar-dinos/listar-dinos.componen
 import { EditarDinosComponent } from './pages/editar-dinos/editar-dinos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutTeamComponent } from './pages/about-team/about-team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InsertarDinosComponent,
     ListarDinosComponent,
-    EditarDinosComponent
+    EditarDinosComponent,
+    AboutTeamComponent
   ],
   imports: [
     BrowserModule,
