@@ -1,11 +1,14 @@
 <br/>
 <div class="container">
-    <p  class="text-center">No hay empleados registrados</p>
+    <!-- Mensaje por si no hay empleados -->
+    <p *ngIf="Dinos.length <= 0" class="text-center">No hay dinos registrados</p>
+    <!-- Lista de empleados -->
 
-    <table class="table table-bordered" >
+    <table class="table table-bordered">
         <thead class="table-success">
             <tr>
                 <th scope="col">ID Dinosaurio</th>
+                <th scope="col">Nombre</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Género</th>
                 <th scope="col">Peso</th>
@@ -15,19 +18,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr >
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let dino of Dinos; let i = index">
+                <td>{{ dino._id }}</td>
+                <td>{{ dino.nombre }}</td>
+                <td>{{ dino.tipo }}</td>
+                <td>{{ dino.genero }}</td>
+                <td>{{ dino.peso }}</td>
+                <td>{{ dino.tamanio }}</td>
                 <td>
-                    <span >
+                    <span [routerLink]="['/editar-empleado', dino._id]">
                         <button type="button" class="btn btn-warning btn-sm">Editar</button>
                     </span>
                 </td>
                 <td>
-                    <span >
+                    <span (click)="eliminarEmpleado(dino, i)">
                         <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
                     </span>
                 </td>

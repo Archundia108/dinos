@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpClient,HttpHeaders,HttpErrorResponse } from '@angular/common/http';
-import { catchError, map } from 'rxjs/operators';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
+import { map, catchError } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
 export class DinoService {
 
-baseUri:string='//localhost:4000/api';
+baseUri:string='https://dyno-api-ds02.herokuapp.com/api';
 headers=new HttpHeaders().set('Content-Type','application/json');
 
   
