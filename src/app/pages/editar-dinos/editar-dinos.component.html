@@ -7,7 +7,7 @@
             <form [formGroup]="editarForm" (ngSubmit)="onSubmit()">
                <div class="form-group">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" class="form-control" formControlName="nombre"/>
+                    <input type="text" class="form-control" formControlName="nombre" placeholder="Ingresa el nombre"/>
                     <div style="color: red;" 
                          *ngIf="enviado && myForm['nombre'].errors?.['required']">
                         Este campo es obligatorio
@@ -50,7 +50,7 @@
 
                 <div class="form-group">
                     <label for="peso">Peso (kilos): </label>
-                    <input type="text" class="form-control" formControlName="peso"/>
+                    <input type="text" class="form-control" formControlName="peso" placeholder="Inserta el peso en kilos"/>
                     <div style="color: red;" 
                         *ngIf="enviado && myForm['peso'].errors?.['required']">
                         Este paso es obligatorio
@@ -63,7 +63,7 @@
                 
                 <div class="form-group">
                     <label for="tamanio">Tamaño (metros): </label>
-                    <input type="text" class="form-control" formControlName="tamanio"/>
+                    <input type="text" class="form-control" formControlName="tamanio" placeholder="Ingresa el tamaño en metros"/>
                     <div style="color: red;" 
                         *ngIf="enviado && myForm['tamanio'].errors?.['required']">
                         Este paso es obligatorio
@@ -76,10 +76,10 @@
 
                 <div class="form-group">
                     <label for="img">Imagen: </label>
-                    <input type="text" class="form-control" formControlName="img"/>
+                    <input type="text" class="form-control" formControlName="img" placeholder="Ingresa el link de una imagen"/>
                     <div style="color: red;" 
                          *ngIf="enviado && myForm['img'].errors?.['required']">
-                        Ve y copia una imagen conchudo!
+                        Este campo es obligatorio
                     </div>
                 </div>
                 <br/>
