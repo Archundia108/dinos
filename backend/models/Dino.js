@@ -17,6 +17,9 @@ let Dino = new Schema({
     peso: {
         type: Number
     },
+    img: {
+        type: String
+    },
 },{
     collection: 'dinosdb'
 })

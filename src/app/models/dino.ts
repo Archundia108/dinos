@@ -4,4 +4,5 @@ export class Dino {
     genero: string;
     tamanio: number;
     peso: number;
+    img: string;
 }

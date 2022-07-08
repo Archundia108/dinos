@@ -45,6 +45,7 @@ export class EditarDinosComponent implements OnInit {
           Validators.pattern('^[0-9]+$'),
         ],
       ],
+      img: ['', [Validators.required]],
     });
   }
 
@@ -65,6 +66,7 @@ export class EditarDinosComponent implements OnInit {
           Validators.pattern('^[0-9]+$'),
         ],
       ],
+      img: ['', [Validators.required]],
     });
   }
 
@@ -96,6 +98,7 @@ export class EditarDinosComponent implements OnInit {
         genero: data['genero'],
         tamanio: data['tamanio'],
         peso: data['peso'],
+        img: data['img'],
       });
     });
   }

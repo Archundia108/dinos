@@ -45,6 +45,7 @@ export class InsertarDinosComponent implements OnInit {
           Validators.pattern('^[0-9]+$'),
         ],
       ],
+      img: ['', [Validators.required]],
     });
   }
 

@@ -73,7 +73,16 @@
                         El tamaño no es válido
                     </div>
                 </div>
-<br/>
+
+                <div class="form-group">
+                    <label for="img">Imagen: </label>
+                    <input type="text" class="form-control" formControlName="img"/>
+                    <div style="color: red;" 
+                         *ngIf="enviado && myForm['img'].errors?.['required']">
+                        Ve y copia una imagen conchudo!
+                    </div>
+                </div>
+                <br/>
                 <div class="form-group">
                     <button class="btn btn-success btn-lg btn-block" type="submit">
                         Agregar

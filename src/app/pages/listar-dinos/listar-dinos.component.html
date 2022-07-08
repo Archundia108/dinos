@@ -14,6 +14,7 @@
                 <th scope="col">Género</th>
                 <th scope="col">Peso (kilos)</th>
                 <th scope="col">Tamaño (metros)</th>
+                <th scope="col">Imagen</th>
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>
@@ -26,6 +27,9 @@
                 <td>{{ dino.genero }}</td>
                 <td>{{ dino.peso }} kg</td>
                 <td>{{ dino.tamanio }} m</td>
+                <td>
+                    <img src="{{ dino.img }}" alt="Imagen" width="100px">
+                </td>
                 <td>
                     <span [routerLink]="['/editar-dino', dino._id]">
                         <button type="button" class="btn btn-warning btn-sm">Editar</button>
