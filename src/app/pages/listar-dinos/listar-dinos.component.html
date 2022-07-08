@@ -12,8 +12,8 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Género</th>
-                <th scope="col">Peso</th>
-                <th scope="col">Tamaño</th>
+                <th scope="col">Peso (kilos)</th>
+                <th scope="col">Tamaño (metros)</th>
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>
@@ -24,8 +24,8 @@
                 <td>{{ dino.nombre }}</td>
                 <td>{{ dino.tipo }}</td>
                 <td>{{ dino.genero }}</td>
-                <td>{{ dino.peso }}</td>
-                <td>{{ dino.tamanio }}</td>
+                <td>{{ dino.peso }} kg</td>
+                <td>{{ dino.tamanio }} m</td>
                 <td>
                     <span [routerLink]="['/editar-dino', dino._id]">
                         <button type="button" class="btn btn-warning btn-sm">Editar</button>
