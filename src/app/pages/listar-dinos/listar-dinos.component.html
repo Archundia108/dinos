@@ -8,7 +8,6 @@
     <table class="table table-bordered table-warning">
         <thead class="table-success">
             <tr class="table-danger">
-                <th scope="col">ID Dinosaurio</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Género</th>
@@ -21,14 +20,13 @@
         </thead>
         <tbody>
             <tr *ngFor="let dino of Dinos; let i = index">
-                <td>{{ dino._id }}</td>
                 <td>{{ dino.nombre }}</td>
                 <td>{{ dino.tipo }}</td>
                 <td>{{ dino.genero }}</td>
                 <td>{{ dino.peso }} kg</td>
                 <td>{{ dino.tamanio }} m</td>
                 <td>
-                    <img src="{{ dino.img }}" alt="Imagen" width="100px">
+                    <img src="{{ dino.img }}" alt="Imagen" width="200px">
                 </td>
                 <td>
                     <span [routerLink]="['/editar-dino', dino._id]">
